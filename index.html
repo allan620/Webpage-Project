@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width , initial-scale = 1.0">
+        <title> EXPLORING ITALY </title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.min.css" rel="stylesheet">
+        <style>
+            body{
+                margin: 0;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                background: linear-gradient(90deg, #009246 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #CE2B37 66.66%);
+                color:#333;
+            }
+
+            header{
+                text-align:center;
+                padding:50px 20px;
+                margin:20px;
+                border-radius: 10px;
+            }
+
+            h1{
+                font-size: 3em;
+                color: #004d40;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            }
+
+            .container{
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .section{
+                background: rgba(255, 255, 255, 0.9);
+                margin: 20px 0;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                width: 80%;    
+                justify-items: center;
+                justify-self: center;
+
+            }
+
+            .section h2{
+                color: #CE2B37;
+                font-size: 2em;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .image-gallery{
+               display: flex;
+               flex-wrap: wrap;
+               gap: 10px;
+               flex: 2;
+               margin-bottom: 20px;
+               
+            }
+
+            .image-placeholder{
+                width: 200px;
+                height: 150px;
+                background: #e0e0e0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                overflow: hidden;    
+            }
+
+            .image-placeholder img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+            }
+
+
+            @media(max-width : 600px){
+                h1{
+                    font-size: 2em;
+                }
+                .section h2{
+                    font-size: 1.5em;
+                }
+                .image-placeholder{
+                    width: 100%;
+                    height: 120px;
+                }
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                
+            }
+
+            figure{
+                text-align: center;
+                margin: 10px 0;
+            }
+
+            figcaption{
+                font-style: italic;
+                font-size: 14px;
+                color: #333;
+                margin-top: 5px;
+            }
+
+            .flag{
+                width: 20px;
+                height: auto;
+                display: block;
+                margin: 5px auto;
+            }
+            .description{
+                width: 100%;
+                min-height: 100px;
+                padding: 10px;
+                font-size: 1.5em;
+                resize :vertical;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 data-step="1" data-intro="Buongiorno,Welcome to Italy" data-position="bottom">WELCOME TO ITALIA ! </h1>
+            <img src = "images/flag.png" alt = "Italian Flag" class="flag">
+        </header>
+        
+        <div class = "container" data-step="2" data-intro="These are the various forms of art here" data-position="auto">
+            <div class ="section" id ="art">
+                    <h2>ART</h2>
+                <div class = "image-gallery">
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src ="images/photo8.jpg" alt = "Art Image 1">
+                        <figcaption>The Creation of Adam</figcaption>
+                        </figure>
+                    </div>
+                    <div class ="image-placeholder">
+                        <figure>
+                        <img src ="images/photo14.jpg" alt = "Art Image 2">
+                        <figcaption>The Birth of Venus</figcaption>
+                        </figure>
+                    </div>
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/photo15.jpg" alt = "Art Image 3">
+                        <figcaption>The School of Athens</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                    <div class="description">
+                         <p>Italy has a rich art history with masterpieces from the Renaissance period, including works by Michelangelo, Botticelli, and Raphael.</p>
+                    </div>
+            </div>
+        </div>    
+            </section>    
+
+        <div class = "container" data-step="3" data-intro="These foods are a must try!" data-position="auto">
+            <div class="section" id="food">
+                    <h2>FOOD</h2> 
+                <div class = "image-gallery">
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/photo1.jpg" alt = "Food Image 1"/>
+                        <figcaption>Lasagna</figcaption>
+                        </figure>
+                    </div>
+                    <div class ="image-placeholder">
+                        <figure>
+                        <img src = "images/photo2.jpg" alt = "Food Image 2"/>
+                        <figcaption>Pizza</figcaption>
+                        </figure>
+                    </div>
+                    <div class = "image-placehodler">
+                        <figure>
+                        <img src = "images/photo34.jpg" alt = "Food Image 3" />
+                        <figcaption>Braciole</figcaption>
+                        </figure>
+                    </div> 
+                </div>
+                    <div class="description">
+                        <p>Italy cuisine is renowed for its regional diversity,fresh ingredients and timeless simplicity eg; Pizza, Pasta, Risotto</p>
+                    </div>         
+            </div> 
+        </div>    
+             
+
+        <div class = "container" data-step="4" data-intro="These are many cultures here , and we appreciate them all" data-position="auto">    
+            <div class = "section" id ="culture">
+                    <h2>CULTURE</h2>
+                <div class = "image-gallery">
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/photo4.jpg" alt = "Culture Image 1">
+                        <figcaption> the Venice Carnival</figcaption>
+                        </figure>
+                    </div>    
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/photo10.jpg" alt = "Culture Image 2">
+                        <figcaption>Italian Folk Dancers</figcaption>
+                        </figure>
+                    </div>    
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/photo12.jpg" alt ="Culture Image 3">
+                        <figcaption>Venice Canal</figcaption>
+                        </figure>
+                    </div>  
+                </div>
+                    <div class = "description">
+                        <p>At it's heart, Italian culture is about la dolce vita - the sweet life- where people savour moments with family,friends and good food</p>
+                    </div>                   
+            </div>
+        </div>    
+            
+            
+        <div class="container" data-step="5" data-intro="There are iconic landmarks everywhere for the pleasure of your eyes" data-position="auto">    
+            <div class ="section" id="Landmarks">
+                    <h2>LANDMARKS</h2>
+                <div class = "image-gallery">
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/photo6.jpg" alt = "Landmark Image 1">
+                        <figcaption>Flavian Amphitheatre</figcaption>
+                        </figure>
+                    </div>
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/photo7.jpg" alt = "Landmark Image 2">
+                        <figcaption>the Leaning Tower of Pisa</figcaption>
+                        </figure>
+                    </div>
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/photo13.jpg" alt = "Landmark Image 3">
+                        <figcaption>Milan Cathedral</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                    <div class = "description">
+                        <p>Italian landmarks are iconic, steeped in history and showcase the country's rich cultural tapestry,from ancient ruins to architectural marvels</p>
+                    </div>
+            </div> 
+        </div>    
+
+
+
+        <div class="container" data-step="6" data-intro="These are the best footballers on the planet right now , Forza Azzurri!" data-position="auto">    
+            <div class ="section" id ="football">
+                    <h2>FOOTBALL</h2>
+                <div class = "image-gallery">
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/photo55.jpg" alt = "Footall Image 1">
+                        <figcaption>Italy National Team</figcaption>
+                        </figure>
+                    </div>
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/photo9.jpg" alt = "Football Image 2">
+                        <figcaption>Inter Milan as champions</figcaption>
+                        </figure>
+                    </div>
+                    <div class = "image-placeholder">
+                        <figure>
+                        <img src = "images/worldcup2.jpg" alt = "Footall Image 3">
+                        <figcaption>Itay World Cup</figcaption>
+                        </figure>
+                    </div>   
+                </div> 
+                    <div class = "description">
+                        <p>Italian football or  'calcio' ,is a cornerstone of the country's culture, pulsing with pasion, history and fierce rivalries.</p>
+                    </div>     
+             </div>        
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/intro.min.js"></script>
+        <script>
+            introJs().start();
+        </script>
+    </body>
+    </html>
