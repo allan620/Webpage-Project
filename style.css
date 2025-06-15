@@ -1,0 +1,146 @@
+ body{     
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(90deg, #009246 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #CE2B37 66.66%);
+    color:#333;
+    }
+ header{
+    text-align:center;
+    padding:50px 20px;
+    margin:20px;
+    border-radius: 10px;
+    }
+h1{
+    font-size: 3em;
+    color: #004d40;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+ .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+.section{
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;    
+    justify-items: center;
+    justify-self: center;
+    }
+.section h2{
+    color: #CE2B37;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+    }
+.image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 2;
+    margin-bottom: 20px;
+    }
+.image-placeholder{
+    width: 200px;
+    height: 150px;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;    
+    }
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    }
+ @media(max-width : 600px){
+     h1{
+        font-size: 2em;
+        }
+    .section h2{
+        font-size: 1.5em;
+        }
+     .image-placeholder{
+        width: 100%;
+        height: 120px;
+        }
+    }
+img {
+    max-width: 100%;
+    height: auto;        
+    }
+ figure{
+    text-align: center;
+    margin: 10px 0;
+    }
+figcaption{
+    font-style: italic;
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+ }
+.flag{
+    width: 20px;
+    height: auto;
+    display: block;
+    margin: 5px auto;
+    }
+.description{
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 1.5em;
+    resize :vertical;
+    }
+
+.introjs-button{
+    background-color: #943d3d;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 8px;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.1); 
+}    
+
+
+.introjs-nextbutton{
+    background-color: #4CAF50; 
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+}
+
+.introjs-nextbutton:hover{
+    background-color: #4CAF50;
+    
+}
+.introjs-prevbutton{
+    background-color: #CE2B37; 
+    font-weight: bold;
+    color: #ffffff;
+    font-style: italic;
+}
+.introjs-prevbutton:hover{
+    background-color: #CE2B37;
+    
+}
+
+.introjs-donebutton{
+    background-color: #009246;
+    color: #000000;
+    font-weight: bold;
+    font-style: italic
+
+}
+.introjs-tooltiptext{
+    background: linear-gradient(90deg, #009246 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #CE2B37 66.66%);
+    font-family:monospace;
+    font-style: italic;
+    
+}
